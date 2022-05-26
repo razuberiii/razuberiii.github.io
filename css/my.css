@@ -1,10 +1,10 @@
 /* Here is your custom css styles. */
-*{
+/* *{
     cursor: url("/medias/zhengchang.ico"),auto!important;
 }
 :active{
     cursor: url("/medias/dianji.ico"),auto!important;
-}
+} */
 ::-webkit-scrollbar-thumb {
     background-color: 
 #FF2A68;
