@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="标签: 笔记, razuberi">
+    <meta name="keywords" content="分类: 微服务笔记, razuberi">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>标签: 笔记 | razuberi</title>
+    <title>分类: 微服务笔记 | razuberi</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -239,57 +239,80 @@
 
     
 
-<div id="tags" class="container chip-container">
+<div id="category-cloud" class="container chip-container">
     <div class="card">
         <div class="card-content">
             <div class="tag-title center-align">
-                <i class="fas fa-tags"></i>&nbsp;&nbsp;文章标签
+                <i class="fas fa-bookmark"></i>&nbsp;&nbsp;文章分类
             </div>
             <div class="tag-chips">
                 
                 
-                <a href="/tags/%E7%AC%94%E8%AE%B0/" title="笔记: 1">
+                
+                <a href="/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E7%AC%94%E8%AE%B0/" title="微服务笔记: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-active "
-                            data-tagname="笔记" style="background-color: #F9EBEA;">笔记
+                            style="background-color: #F9EBEA;">微服务笔记
                         <span class="tag-length">1</span>
                     </span>
                 </a>
+                
                 
             </div>
         </div>
     </div>
 </div>
 
+
     
 
     <article id="articles" class="container articles">
         <div class="row tags-posts">
             
-            
-            <div class="article tag-post col s12 m6 l4" data-tags="笔记" data-aos="fade-up">
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/05/26/test/">
+                    <a href="/2022/05/27/seata-fen-bu-shi-shi-wu-xue-xi-bi-ji/">
                         <div class="card-image tag-image">
                             
-                            <img src="https://blog-1312179285.cos.ap-nanjing.myqcloud.com/img/QQ%E5%9B%BE%E7%89%8720220527124223.jpg" class="responsive-img" alt="test">
+                            <img src="https://blog-1312179285.cos.ap-nanjing.myqcloud.com/%E5%BE%AE%E6%9C%8D%E5%8A%A1/src%3Dhttp___pic4.zhimg.com_v2-49a0aca0c465b05fb9356b7882a61ebb_1200x500.jpg%26refer%3Dhttp___pic4.zhimg.webp" class="responsive-img" alt="Seata分布式事务学习笔记">
                             
-                            <span class="card-title">test</span>
+                            <span class="card-title">Seata分布式事务学习笔记</span>
                         </div>
                     </a>
                     <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                
+通过Spring框架下的@Transactional注解可以保证单一数据源增删改查的一致性。
+但在分布式事务中，每个微服务都可能对应着一个独立的数据源，这个时候@Transactional注解就失效了。所以为了解决在调用多个系统服务时数据
+                            
+                        </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-26
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-27
                             </span>
                             <span class="publish-author">
                                 
-                                <i class="fas fa-user fa-fw"></i>
-                                razuberi
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E7%AC%94%E8%AE%B0/" class="post-category">
+                                    微服务笔记
+                                </a>
+                                
                                 
                             </span>
                         </div>
                     </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/Seata/">
+                            <span class="chip bg-color">Seata</span>
+                        </a>
+                        
+                    </div>
+                    
                 </div>
             </div>
             
@@ -315,7 +338,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">90</span>&nbsp;字
+                class="white-color">1.8k</span>&nbsp;字
             
             
             
