@@ -121,6 +121,10 @@ $(function () {
     articleInit();
 
     $('.modal').modal();
+	
+	$(document).find('img[data-original]').each(function(){
+		$(this).parent().attr("href", $(this).attr("data-original"));
+});
 
     /*回到顶部*/
     $('#backTop').click(function () {
