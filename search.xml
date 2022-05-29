@@ -4,9 +4,34 @@
   
     
     <entry>
-      <title>word设置每页不同页脚</title>
-      <link href="/2022/05/29/page/"/>
-      <url>/2022/05/29/page/</url>
+      <title>Markdown字体颜色设置</title>
+      <link href="/2022/05/30/markdown-zi-ti-yan-se-she-zhi/"/>
+      <url>/2022/05/30/markdown-zi-ti-yan-se-she-zhi/</url>
+      
+        <content type="html"><![CDATA[<pre class="line-numbers language-none"><code class="language-none">&lt;font color&#x3D;blue &gt; blue &lt;&#x2F;font&gt;&lt;font color&#x3D;#00f9ff &gt; #00f9ff &lt;&#x2F;font&gt;&lt;font color&#x3D;red &gt; red &lt;&#x2F;font&gt;&lt;font color&#x3D;brown &gt; brown &lt;&#x2F;font&gt;&lt;font color&#x3D;chartreuse &gt; chartreuse &lt;&#x2F;font&gt;&lt;font color&#x3D;green &gt; green &lt;&#x2F;font&gt;&lt;font color&#x3D;darkgreen &gt; darkgreen &lt;&#x2F;font&gt;&lt;font color&#x3D;orange &gt; orange &lt;&#x2F;font&gt;&lt;font color&#x3D;darkorange &gt; darkorange &lt;&#x2F;font&gt;&lt;font color&#x3D;pink &gt; pink &lt;&#x2F;font&gt;&lt;font color&#x3D;yellow &gt; yellow &lt;&#x2F;font&gt;&lt;font color&#x3D;lawngreen &gt; lawngreen &lt;&#x2F;font&gt;&lt;font color&#x3D;purple &gt; purple &lt;&#x2F;font&gt;&lt;font color&#x3D;bright  &gt; blue &lt;&#x2F;font&gt;&lt;font color&#x3D;blue magenta&gt; blue magenta &lt;&#x2F;font&gt;&lt;font color&#x3D;teal &gt; teal &lt;&#x2F;teal&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>示例:</p><p><font color=blue > blue </font></p><p><font color=#00f9ff > #00f9ff </font></p><p><font color=red > red </font><br><font color=brown > brown </font><br><font color=chartreuse > chartreuse </font><br><font color=green > green </font><br><font color=darkgreen > darkgreen </font><br><font color=orange > orange </font><br><font color=darkorange > darkorange </font><br><font color=pink > pink </font><br><font color=yellow > yellow </font><br><font color=lawngreen > lawngreen </font><br><font color=purple > purple </font><br><font color=bright  > blue </font><br><font color=blue magenta> blue magenta </font><br><font color=teal > teal</teal></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 小知识 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Markdown </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Word设置每页不同页脚</title>
+      <link href="/2022/05/29/word-she-zhi-mei-ye-bu-tong-ye-jiao/"/>
+      <url>/2022/05/29/word-she-zhi-mei-ye-bu-tong-ye-jiao/</url>
       
         <content type="html"><![CDATA[<blockquote><p>Word中页眉页脚默认是每一页都相同的，但实际情况很多时候会遇到要求各个页脚都要自定义的情况，这个时候就需要手动设置一下</p></blockquote><ul><li>在<strong>布局</strong>—-<strong>分隔符</strong>  中插入一个<strong>连续</strong>分节符</li></ul><p><img src="https://blog-1312179285.cos.ap-nanjing.myqcloud.com/img/%E9%A1%B5%E7%9C%89%E9%A1%B5%E8%84%9A1.png"></p><blockquote><p>分节符实际也是要占位置的，设置的时候找个空多的位置插入就行。插入后删个空格格式就回复了。</p></blockquote><ul><li>双击页脚，可以看到页脚右上方显示了与上一节相同。点击上方的<strong>链接到前一节</strong>，关闭这个功能。</li></ul><p><img src="https://blog-1312179285.cos.ap-nanjing.myqcloud.com/img/%E9%A1%B5%E7%9C%89%E9%A1%B5%E8%84%9A2.png"></p><ul><li><p>实际效果</p><blockquote><p>注意要在每一页后都加入<strong>连续分页符</strong>，负责只能保证加了分页符的两页页脚不相同</p></blockquote></li></ul><p><img src="https://blog-1312179285.cos.ap-nanjing.myqcloud.com/img/%E9%A1%B5%E7%9C%89%E9%A1%B5%E8%84%9A3.png"></p>]]></content>
       
