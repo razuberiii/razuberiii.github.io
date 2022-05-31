@@ -310,7 +310,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    158
+                    157
                 </div>
                 
 
@@ -344,10 +344,11 @@
 <pre class="line-numbers language-none"><code class="language-none">No serializer found for class java.lang.Object and no properties discovered to create BeanSerializer 
  (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS) ) ;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<p>意思是没有找到可用于Object的序列化器，也没有找到属性去创建BeanSerializer。<br>后面的接着提示了解决方法：(to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS)</p>
+<p>意思是没有找到可用于Object的序列化器，也没有找到属性去创建BeanSerializer。</p>
 <p>原因就是因为map里的序列化的new Object()</p>
 <p><strong>解决方法</strong></p>
-<p>解决办法很简单，只要在properties文件中如下配置即可</p>
+<p>其实在错误信息中已经提示了解决办法</p>
+<p>解决方法很简单，只要在properties文件中如下配置即可</p>
 <pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token key attr-name">spring.jackson.serialization.FAIL_ON_EMPTY_BEANS</span><span class="token punctuation">=</span><span class="token value attr-value">false</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 
