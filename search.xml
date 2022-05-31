@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>SpringMVC的注解@ResponseBody返回map中含有序列化对象时报错问题</title>
+      <link href="/2022/05/31/springmvc-de-zhu-jie-responsebody-fan-hui-map-zhong-han-you-xu-lie-hua-dui-xiang-shi-bao-cuo-wen-ti/"/>
+      <url>/2022/05/31/springmvc-de-zhu-jie-responsebody-fan-hui-map-zhong-han-you-xu-lie-hua-dui-xiang-shi-bao-cuo-wen-ti/</url>
+      
+        <content type="html"><![CDATA[<p><strong>问题描述</strong></p><p>上代码</p><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token annotation punctuation">@ResponseBody</span><span class="token annotation punctuation">@RequestMapping</span><span class="token punctuation">(</span><span class="token string">"/result"</span><span class="token punctuation">)</span><span class="token keyword">public</span> <span class="token class-name">Map</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">,</span> <span class="token class-name">Object</span><span class="token punctuation">></span></span> <span class="token class-name">Method</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>    <span class="token comment">// do your work...</span>    <span class="token class-name">Map</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">,</span> <span class="token class-name">Object</span><span class="token punctuation">></span></span> resultMap <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">HashMap</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token punctuation">></span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    resultMap<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">"code"</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    resultMap<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">"data"</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">Object</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 序列化 new Obejct()&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>会报如下错误</p><pre class="line-numbers language-none"><code class="language-none">No serializer found for class java.lang.Object and no properties discovered to create BeanSerializer  (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS) ) ;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>意思是没有找到可用于Object的序列化器，也没有找到属性去创建BeanSerializer。<br>后面的接着提示了解决方法：(to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS)</p><p>原因就是因为map里的序列化的new Object()</p><p><strong>解决方法</strong></p><p>解决办法很简单，只要在properties文件中如下配置即可</p><pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token key attr-name">spring.jackson.serialization.FAIL_ON_EMPTY_BEANS</span><span class="token punctuation">=</span><span class="token value attr-value">false</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Spring </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 总有些奇奇怪怪的bug突然攻击我 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Java将图片转化为字符输出到txt文档</title>
       <link href="/2022/05/31/java-jiang-tu-pian-zhuan-hua-wei-zi-fu-shu-chu-dao-txt-wen-dang/"/>
       <url>/2022/05/31/java-jiang-tu-pian-zhuan-hua-wei-zi-fu-shu-chu-dao-txt-wen-dang/</url>
